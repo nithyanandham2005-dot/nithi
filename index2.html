@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Rose Day</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Header */
+h1 {
+  margin-top: 20px;
+  font-size: 36px;
+}
+
+p {
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+/* Image gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px 10px;
+}
+
+.gallery img {
+  width: 160px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Romantic text box */
+.message {
+  background: rgba(255,255,255,0.15);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Floating rose animation */
+.rose {
+  position: fixed;
+  bottom: -50px;
+  font-size: 30px;
+  animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<h1>🌹 Happy Rose Day 🌹</h1>
+<p>To the one who makes life bloom beautifully</p>
+
+<div class="gallery">
+  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+  <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91">
+  <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1">
+</div>
+
+<div class="message">
+  💖 Like a rose, you bring color to my world,<br>
+  fragrance to my life, and happiness to my heart.<br><br>
+  🌹 Every petal whispers how special you are,<br>
+  and every smile of yours makes my day brighter.<br><br>
+  💕 This rose is not just a flower,<br>
+  it’s my feeling wrapped in love.
+</div>
+
+<!-- Rose Animation -->
+<span class="rose" style="left:10%; animation-delay:0s;">🌹</span>
+<span class="rose" style="left:30%; animation-delay:2s;">🌹</span>
+<span class="rose" style="left:50%; animation-delay:4s;">🌹</span>
+<span class="rose" style="left:70%; animation-delay:1s;">🌹</span>
+<span class="rose" style="left:90%; animation-delay:3s;">🌹</span>
+
+</body>
+</html>
